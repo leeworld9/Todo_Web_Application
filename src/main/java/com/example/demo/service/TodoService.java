@@ -25,4 +25,29 @@ public class TodoService {
         return saveEntity.getTitle();
     }
 
+
+    public List<TodoEntity> create(final TodoEntity entity) {
+        // Validations
+        vaildate(entity);
+
+        repository.save(entity);
+
+        log.info("Entity Id : {} is saved.", entity.getId());
+
+        return repository.findByUserId(entity.getUserId());
+    }
+
+    // 리펙토링한 메소드
+    private void vaildate(final TodoEntity entity) {
+        if (entity == null) {
+            log.warn("Entity cannot be null.");
+            throw new RuntimeException("Entity cannot be null.");
+        }
+
+        if (entity.getUserId() == null) {
+            log.warn("Unknown user.");
+            throw new RuntimeException("Unknown user.");
+        }
+    }
+
 }
