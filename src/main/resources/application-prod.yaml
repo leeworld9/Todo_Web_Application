@@ -1,0 +1,13 @@
+server:
+  port : 5000 # 일라스틱 빈스톡은 기본적으로 애플리케이션이 5000포트를 사용
+spring:
+  jpa:
+    database: MYSQL # 데이터베이스 MySQL 사용
+    show-sql: true # jpa가 실행한 sql 쿼리를 로그로 보여줄지 여부
+    database-platform: org.hibernate.dialect.MySQL8Dialect # MySQL8Dialect : 자바의 데이터형 과 데이터베이스의 데이터형을 매핑해 주는 라이브러리
+    hibernate:
+      ddl-auto: update # 없는 테이블은 새로 만들고 수정된 테이블은 업데이트해야 한다면 update
+  datasource: # ${rds.XXXX} : 일라스틱 빈스톡이 애플리케이션을 실행하면서 대체해 줄 수 있다.
+    url: jdbc:mysql://${rds.hostname}:${rds.port}/${rds.db.name}
+    username: ${rds.username}
+    password: ${rds.password}

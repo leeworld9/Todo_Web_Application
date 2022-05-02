@@ -27,6 +27,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation group: 'com.auth0', name: 'java-jwt', version: '3.19.1'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+    runtimeOnly 'mysql:mysql-connector-java'
 	//implementation group: 'com.google.guava', name: 'guava', version: '31.0.1-jre'
 }
 

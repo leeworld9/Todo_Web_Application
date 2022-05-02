@@ -1,0 +1,2 @@
+# application-dev.yaml 은 공백 파일로 남겨둔다.
+# 이렇게 남겨두면 dev 사용 시 h2 데이터베이스를, prod 사용 시 mysql을 사용할 수 있다.
