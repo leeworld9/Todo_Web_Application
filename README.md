@@ -26,3 +26,12 @@
  - CI/CD 환경 구성 및 적용.
  - Swagger를 사용한 API 문서 자동화.
  - TDD(테스트 주도 개발) 적용.
+
+## 5. 참고
+ - http://www.yes24.com/Product/Goods/103768882
+ - https://thecodinglog.github.io/java/2020/12/15/java-generic-wildcard.html
+ - http://yoonbumtae.com/?p=2773
+ - https://devfunny.tistory.com/364
+ - https://brunch.co.kr/@heracul/3
+ - https://d-life93.tistory.com/309
+ - https://velog.io/@kcdoggo/Switch-is-not-exported-from-react-router-dom-%EC%97%90%EB%9F%AC
